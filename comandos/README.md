@@ -8,6 +8,8 @@ pip install django
 
 django-admin startproject project .
 
+python manage.py starapp contact
+
 # Configurar o git
 
 git config --global user.name 'Seu nome'
