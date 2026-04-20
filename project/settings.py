@@ -121,3 +121,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = (
     BASE_DIR / 'base_static',
 )
+
+STATIC_ROOT = BASE_DIR / 'static' # Onde o collectstatic vai jogar os arquivos
+
+MEDIA_URL = '/media/' # URL para acessar os arquivos
+MEDIA_ROOT = BASE_DIR / 'media' # Onde o usuário vai subir os arquivos
