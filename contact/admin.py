@@ -12,9 +12,6 @@ class ContactAdmin(admin.ModelAdmin):
 
 @admin.register(models.Category)
 class CategoryAdmin(admin.ModelAdmin):
-    class Meta:
-        verbose_name = 'Category'
-        verbose_name_plural = 'Categories'
     list_display = ('id','name')
     ordering = ('id',)
     search_fields = ('id','name')

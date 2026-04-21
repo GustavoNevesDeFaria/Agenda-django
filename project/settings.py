@@ -126,3 +126,8 @@ STATIC_ROOT = BASE_DIR / 'static' # Onde o collectstatic vai jogar os arquivos
 
 MEDIA_URL = '/media/' # URL para acessar os arquivos
 MEDIA_ROOT = BASE_DIR / 'media' # Onde o usuário vai subir os arquivos
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
